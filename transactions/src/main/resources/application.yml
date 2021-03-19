@@ -9,13 +9,17 @@ spring.kafka:
   topic.transactions: ${KAFKA_TOPIC_TRANSACTIONS:transacoes}
 
 # jpa
-  datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:transactions
-    username:
-    password:
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate.ddl-auto: update
-    properties.hibernate.show_sql: true
-    properties.hibernate.format_sql: true
+spring.datasource:
+  driverClassName: org.h2.Driver
+  url: jdbc:h2:mem:transactions
+  username:
+  password:
+spring.jpa:
+  database-platform: org.hibernate.dialect.H2Dialect
+  hibernate.ddl-auto: update
+  properties.hibernate.show_sql: true
+  properties.hibernate.format_sql: true
+
+# keycloak
+spring.security.oauth2.resourceserver.jwt.issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:18080/auth/realms/transactions}
+spring.security.oauth2.resourceserver.jwt.jwk-set-uri: ${KEYCLOAK_JWKS_URI:http://localhost:18080/auth/realms/transactions/protocol/openid-connect/certs}
