@@ -1,0 +1,12 @@
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 100.50, '2021-01-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 5.60, '2021-02-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 2550.50, '2021-03-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 3000.00, '2021-04-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 7897.10, '2021-05-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 1111.11, '2021-06-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 33355.33, '2021-07-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 9999.99, '2021-08-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 10.00, '2021-09-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 29.50, '2021-10-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 888.80, '2021-12-26');
+INSERT INTO transaction(card_number, amount, transaction_date) VALUES('1234-5678-9876-5432', 465.65, '2021-12-26');

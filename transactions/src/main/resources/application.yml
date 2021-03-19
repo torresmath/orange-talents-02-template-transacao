@@ -1,0 +1,21 @@
+# kafka
+spring.kafka:
+  bootstrap-servers: ${KAFKA_HOST:localhost:9092}
+  consumer:
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    group-id: ${KAFKA_CONSUMER_GROUP_ID:transactions-app}
+    auto-offset-reset: ${KAFKA_AUTO_OFFSET_RESET:latest}
+  topic.transactions: ${KAFKA_TOPIC_TRANSACTIONS:transacoes}
+
+# jpa
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:transactions
+    username:
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    properties.hibernate.show_sql: true
+    properties.hibernate.format_sql: true
